@@ -1,6 +1,5 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "../componets/ThemeProvider";
 import { Menu, X } from "lucide-react";
@@ -11,6 +10,16 @@ const NavBar = () => {
 
   // Track if the page is scrolled
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Add scroll listener to detect when page is scrolled
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Track if mobile menu is open or closed
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
