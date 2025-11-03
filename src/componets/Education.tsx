@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import { Award, Calendar, GraduationCap } from "lucide-react";
 import { Badge } from "./ui/badge";
-// Education history - replace with your actual education
+// Education history
 const education = [
   {
     degree: "Web Development / Web Design ",
@@ -12,7 +12,7 @@ const education = [
     description:
       "Comprehensive training in web development, UI/UX design, responsive design principles, database fundamentals, and modern development workflows.",
     achievements: [
-      "Built multiple full-stack and front-end projects",
+      "Built multiple front-end projects",
       "Completed hands-on industry-focused coursework",
       "Collaborated on team development projects",
       "Certified in web technologies (HTML, CSS, JavaScript, React)",
@@ -49,7 +49,7 @@ const education = [
   },
 ];
 
-// Certifications - replace with your actual certifications
+// Certifications
 const certifications = [
   {
     name: "Adobe Professional Certificate",
