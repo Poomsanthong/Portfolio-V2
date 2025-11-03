@@ -2,38 +2,14 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Languages as LanguagesIcon, Globe } from "lucide-react";
 import { Badge } from "./ui/badge";
+import { LANGUAGES_PROFICIENCY, PROFICIENCY_GUIDE } from "@/constants";
 
 const Languages = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-  // Language proficiency levels data
-  const languages = [
-    {
-      name: "Thai",
-      level: "Native",
-      proficiency: 100, // Percentage for visual bar
-      description: "Native speaker",
-    },
-    {
-      name: "English",
-      level: "Fluent",
-      proficiency: 95,
-      description: "Full professional proficiency",
-    },
-    {
-      name: "Maltese",
-      level: "Intermediate",
-      proficiency: 65,
-      description: "Conversational proficiency",
-    },
-    {
-      name: "Dutch",
-      level: "Basic",
-      proficiency: 30,
-      description: "Currently learning Dutch",
-    },
-  ];
+  // Centralized language data
+  const languages = LANGUAGES_PROFICIENCY;
 
   // Proficiency level colors for badges
   const getLevelColor = (level: string) => {
@@ -151,13 +127,7 @@ const Languages = () => {
             Proficiency Levels
           </h4>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-            {[
-              { level: "Native", description: "Mother tongue" },
-              { level: "Fluent", description: "Full professional" },
-              { level: "Professional", description: "Working proficiency" },
-              { level: "Intermediate", description: "Conversational" },
-              { level: "Basic", description: "Elementary" },
-            ].map((item, idx) => (
+            {PROFICIENCY_GUIDE.map((item, idx) => (
               <motion.div
                 key={item.level}
                 initial={{ opacity: 0, scale: 0.9 }}
