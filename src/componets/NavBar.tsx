@@ -39,13 +39,12 @@ const NavBar = () => {
   // NavBar items can be added here
   const navItems = [
     { label: "Home", id: "hero" },
-    { label: "Motivation", id: "motivation" },
-    { label: "Education", id: "education" },
+    { label: "About", id: "motivation" },
     { label: "Experience", id: "experience" },
+    { label: "Projects", id: "projects" },
     { label: "Skills", id: "skills" },
     { label: "Contact", id: "contact" },
   ];
-
   return (
     // Animated navigation bar - slides down on page load
 
