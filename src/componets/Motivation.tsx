@@ -1,6 +1,5 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Heart, Target, Zap } from "lucide-react";
 
 const Motivation = () => {
   const ref = useRef(null);
