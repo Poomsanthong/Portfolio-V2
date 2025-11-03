@@ -175,8 +175,12 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
-                href="mailto:thanapoom.santhong10@gmail.com"
-                className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
               >
                 <Mail className="w-5 h-5 text-gray-700 dark:text-gray-300" />
               </motion.a>

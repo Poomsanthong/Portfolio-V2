@@ -9,6 +9,7 @@ import Experience from "./componets/Experience";
 import Project from "./componets/Project";
 import Languages from "./componets/Languages";
 import Contact from "./componets/Contact";
+import Footer from "./componets/Footer";
 const App = () => {
   return (
     <ThemeProvider>
@@ -23,6 +24,7 @@ const App = () => {
         <Project />
         <Languages />
         <Contact />
+        <Footer />
       </div>
     </ThemeProvider>
   );
