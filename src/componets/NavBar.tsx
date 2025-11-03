@@ -38,22 +38,12 @@ const NavBar = () => {
 
   // NavBar items can be added here
   const navItems = [
-    {
-      label: "Home",
-      id: "hero",
-    },
-    {
-      label: "About",
-      id: "about",
-    },
-    {
-      label: "Projects",
-      id: "projects",
-    },
-    {
-      label: "Contact",
-      id: "contact",
-    },
+    { label: "Home", id: "hero" },
+    { label: "Motivation", id: "motivation" },
+    { label: "Education", id: "education" },
+    { label: "Experience", id: "experience" },
+    { label: "Skills", id: "skills" },
+    { label: "Contact", id: "contact" },
   ];
 
   return (

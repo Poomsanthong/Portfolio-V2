@@ -3,6 +3,7 @@ import { ThemeProvider } from "./componets/ThemeProvider";
 import Hero from "./componets/Hero";
 import About from "./componets/About";
 import Skills from "./componets/Skills";
+import { Motivation } from "./componets/Motivation";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <div className="min-h-screen transition-colors duration-300">
         <NavBar />
         <Hero />
+        <Motivation />
         <About />
         <Skills />
       </div>
