@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion"; // Trigger animations when section is visible
-import { Smartphone, Zap, Code2, Heart, Target } from "lucide-react";
+import { Smartphone, Zap, Code2 } from "lucide-react";
+import { ABOUT_FEATURES } from "@/constants";
 
 const About = () => {
   // Create a ref to track when this section is in viewport
@@ -10,27 +11,12 @@ const About = () => {
   // once: true means animation only happens once (not every time you scroll)
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-  // Three main selling points/features
-  const features = [
-    {
-      icon: Code2,
-      title: "Modern Tech Stack",
-      description:
-        "Expert in React, JavaScript, Tailwind CSS, and the latest front-end technologies.",
-    },
-    {
-      icon: Smartphone,
-      title: "Responsive Design",
-      description:
-        "Building mobile-first, fully responsive websites that work flawlessly on any device.",
-    },
-    {
-      icon: Zap,
-      title: "Performance Focused",
-      description:
-        "Optimizing for speed, accessibility, and SEO to deliver exceptional user experiences.",
-    },
-  ];
+  // Map constants to icon components
+  const iconMap = { code: Code2, smartphone: Smartphone, zap: Zap } as const;
+  const features = ABOUT_FEATURES.map((f) => ({
+    ...f,
+    icon: iconMap[f.iconId as keyof typeof iconMap] ?? Code2,
+  }));
 
   return (
     <>

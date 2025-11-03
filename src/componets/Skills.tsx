@@ -1,58 +1,27 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Code2, Palette, Rocket } from "lucide-react";
+import { SKILL_CATEGORIES, ADDITIONAL_SKILLS } from "@/constants";
 
 const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-  // Main skill categories with progress levels
-  const skillCategories = [
-    {
-      category: "Core Technologies",
-      icon: Code2,
-      skills: [
-        { name: "JavaScript (ES6+)", level: 95 }, // Skill level out of 100
-        { name: "React", level: 92 },
-        { name: "HTML5", level: 98 },
-        { name: "CSS3", level: 95 },
-      ],
-    },
-    {
-      category: "Styling & Design",
-      icon: Palette,
-      skills: [
-        { name: "Tailwind CSS", level: 93 },
-        { name: "Responsive Design", level: 96 },
-        { name: "CSS Animations", level: 88 },
-        { name: "Mobile-First", level: 94 },
-      ],
-    },
-    {
-      category: "Tools & Deployment",
-      icon: Rocket,
-      skills: [
-        { name: "GitHub", level: 90 },
-        { name: "Vercel", level: 88 },
-        { name: "Git Version Control", level: 92 },
-        { name: "NPM", level: 85 },
-      ],
-    },
-  ];
+  // Map constant icon ids to components
+  const iconMap = {
+    code: Code2,
+    palette: Palette,
+    rocket: Rocket,
+  } as const;
+
+  // Use centralized data
+  const skillCategories = SKILL_CATEGORIES.map((c) => ({
+    ...c,
+    icon: iconMap[c.iconId as keyof typeof iconMap] ?? Code2,
+  }));
 
   // Additional skills shown as tags (no progress bars)
-  const additionalSkills = [
-    "React Hooks",
-    "Component Architecture",
-    "State Management",
-    "Using APIs",
-    "Performance Optimization",
-    "Cross-Browser Compatibility",
-    "Accessibility ",
-    "SEO Best Practices",
-    "Figma to Code",
-    "Webpack/Vite",
-  ];
+  const additionalSkills = ADDITIONAL_SKILLS;
 
   return (
     <section

@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import emailjs from "@emailjs/browser";
+import { CONTACT_INFO } from "@/constants";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -75,23 +76,19 @@ const Contact = () => {
     }
   };
 
-  // Contact information to display
+  // Contact information to display (centralized)
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "Thanapoom.santhong10@gmail.com", // email
+      value: CONTACT_INFO.email,
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+31 658982442 ", // phone
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Apeldoorn, Netherlands", // location
-    },
+    ...(CONTACT_INFO.phone
+      ? [{ icon: Phone, label: "Phone", value: CONTACT_INFO.phone }]
+      : []),
+    ...(CONTACT_INFO.location
+      ? [{ icon: MapPin, label: "Location", value: CONTACT_INFO.location }]
+      : []),
   ];
 
   return (
