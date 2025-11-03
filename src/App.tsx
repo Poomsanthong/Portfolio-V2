@@ -5,6 +5,7 @@ import About from "./componets/About";
 import Skills from "./componets/Skills";
 import Motivation from "./componets/Motivation";
 import Education from "./componets/Education";
+import Experience from "./componets/Experience";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <About />
         <Skills />
         <Education />
+        <Experience />
       </div>
     </ThemeProvider>
   );
