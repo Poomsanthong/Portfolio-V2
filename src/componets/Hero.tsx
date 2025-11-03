@@ -68,7 +68,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
-                delay: 0.5,
+                delay: 0.1,
                 duration: 0.8,
                 type: "spring",
                 stiffness: 100,
