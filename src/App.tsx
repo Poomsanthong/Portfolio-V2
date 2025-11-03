@@ -3,7 +3,8 @@ import { ThemeProvider } from "./componets/ThemeProvider";
 import Hero from "./componets/Hero";
 import About from "./componets/About";
 import Skills from "./componets/Skills";
-import { Motivation } from "./componets/Motivation";
+import Motivation from "./componets/Motivation";
+import Education from "./componets/Education";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Motivation />
         <About />
         <Skills />
+        <Education />
       </div>
     </ThemeProvider>
   );

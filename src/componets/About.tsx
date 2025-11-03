@@ -30,25 +30,6 @@ const About = () => {
       description:
         "Optimizing for speed, accessibility, and SEO to deliver exceptional user experiences.",
     },
-
-    {
-      icon: Target,
-      title: "Passion for Excellence",
-      description:
-        "Dedicated to delivering high-quality code and exceptional user experiences.",
-    },
-    {
-      icon: Zap,
-      title: "Continuous Learning",
-      description:
-        "Always staying updated with the latest technologies and best practices.",
-    },
-    {
-      icon: Heart,
-      title: "Team Collaboration",
-      description:
-        "Thriving in collaborative environments and contributing to team success.",
-    },
   ];
 
   return (

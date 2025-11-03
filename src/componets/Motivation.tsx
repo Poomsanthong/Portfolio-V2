@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Heart, Target, Zap } from "lucide-react";
 
-export function Motivation() {
+const Motivation = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -80,4 +80,6 @@ export function Motivation() {
       </div>
     </section>
   );
-}
+};
+
+export default Motivation;
