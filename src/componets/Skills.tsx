@@ -35,7 +35,7 @@ const Skills = () => {
         { name: "GitHub", level: 90 },
         { name: "Vercel", level: 88 },
         { name: "Git Version Control", level: 92 },
-        { name: "NPM/Yarn", level: 85 },
+        { name: "NPM", level: 85 },
       ],
     },
   ];
