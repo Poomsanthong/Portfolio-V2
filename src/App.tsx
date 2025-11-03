@@ -7,6 +7,7 @@ import Motivation from "./componets/Motivation";
 import Education from "./componets/Education";
 import Experience from "./componets/Experience";
 import Project from "./componets/Project";
+import Languages from "./componets/Languages";
 const App = () => {
   return (
     <ThemeProvider>
@@ -19,6 +20,7 @@ const App = () => {
         <Education />
         <Experience />
         <Project />
+        <Languages />
       </div>
     </ThemeProvider>
   );
