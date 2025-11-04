@@ -3,7 +3,7 @@
  * Landing section with animated background, introduction text, and call-to-action buttons
  */
 import { ArrowDown, Github, Linkedin, Mail, Code2 } from "lucide-react";
-
+import { SOCIALS } from "@/constants";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 
@@ -155,7 +155,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }} // Grow and rotate on hover
                 whileTap={{ scale: 0.9 }} // Shrink when clicked
-                href="https://github.com/Poomsanthong" // GitHub URL
+                href={SOCIALS[0].url} // GitHub URL
                 className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
@@ -165,7 +165,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
-                href="#" // LinkedIn URL
+                href={SOCIALS[1].url} // LinkedIn URL
                 className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <Linkedin className="w-5 h-5 text-gray-700 dark:text-gray-300" />

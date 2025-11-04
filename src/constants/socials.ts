@@ -16,7 +16,7 @@ export const SOCIALS: Social[] = [
   {
     id: "email",
     name: "Email",
-    url: "mailto:thanapoom.santhong10@gmail.com",
+    url: "#contact",
     ariaLabel: "Send me an email",
   },
 ];

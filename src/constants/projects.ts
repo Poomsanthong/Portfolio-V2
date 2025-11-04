@@ -34,9 +34,19 @@ export const PROJECTS: ProjectCard[] = [
       "Clean, modern portfolio site with smooth animations and transitions. Mobile-first approach with perfect Lighthouse scores.",
     image:
       "https://images.unsplash.com/photo-1750056393326-8feed2a1c34f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB1c2VyJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc2MTcyMzQ5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["HTML", "CSS", "JavaScript", "GitHub"],
-    github: "#",
-    live: "#",
+    tags: [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "GitHub",
+      "React",
+      "Responsive Design",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Dark Mode",
+    ],
+    github: "https://github.com/Poomsanthong/Portfolio-V2",
+    live: "https://portfoliov2-bpufaqn5l-poom-s-projects-177e0ca6.vercel.app/",
   },
   {
     title: "Real-Time Stock Market (In Progress)",

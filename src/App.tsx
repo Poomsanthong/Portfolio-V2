@@ -10,6 +10,8 @@ import Project from "./componets/Project";
 import Languages from "./componets/Languages";
 import Contact from "./componets/Contact";
 import Footer from "./componets/Footer";
+
+import { Analytics } from "@vercel/analytics/react";
 const App = () => {
   return (
     <ThemeProvider>
@@ -25,6 +27,7 @@ const App = () => {
         <Languages />
         <Contact />
         <Footer />
+        <Analytics />
       </div>
     </ThemeProvider>
   );

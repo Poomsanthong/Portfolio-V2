@@ -2,13 +2,14 @@ import type { ContactInfo, PersonalInfo } from "../types";
 
 export const PERSONAL_INFO: PersonalInfo = {
   name: "Poom Santhong",
-  title: "Full Stack Developer",
+  title: "Frontend Developer",
   bio: "Passionate developer with expertise in modern web technologies.",
-  resume: "/path-to-resume.pdf", // Update with actual path
+  resume: "/assets/Poom's CV.pdf", //  actual path
 };
 
 export const CONTACT_INFO: ContactInfo = {
   email: "thanapoom.santhong10@gmail.com",
-  location: "Your Location", // Update with your location
-  website: "https://yourportfolio.com", // Update with your website
+  location: "Apeldoorn, Netherlands", //   your location
+  website: "https://portfoliov2-bpufaqn5l-poom-s-projects-177e0ca6.vercel.app/", //  your website
+  phone: "+31 6 58982442 ", //  your phone number
 };

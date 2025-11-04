@@ -38,12 +38,26 @@ const Footer = () => {
             {SOCIALS.map((social) => {
               const Icon = iconFor(social.id);
               if (!Icon) return null;
+
+              // Handle internal anchor links with smooth scroll
+              const isInternalAnchor = social.url.startsWith("#");
+              const handleClick = isInternalAnchor
+                ? (e: React.MouseEvent) => {
+                    e.preventDefault();
+                    const targetId = social.url.substring(1);
+                    document
+                      .getElementById(targetId)
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }
+                : undefined;
+
               return (
                 <motion.a
                   key={social.id}
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
                   href={social.url}
+                  onClick={handleClick}
                   className="hover:text-cyan-300 transition-colors"
                   aria-label={social.ariaLabel}
                 >
