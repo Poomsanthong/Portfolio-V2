@@ -18,7 +18,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Tailwind CSS", level: 93 },
       { name: "Responsive Design", level: 96 },
-      { name: "CSS Animations", level: 88 },
+      { name: "Figma", level: 88 },
       { name: "Mobile-First", level: 94 },
     ],
   },
