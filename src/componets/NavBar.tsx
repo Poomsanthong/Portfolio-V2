@@ -66,12 +66,17 @@ const NavBar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center gap-3"
             onClick={() => scrollToSection("hero")}
           >
-            <span className="bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            <img
+              src="/assets/PS-icon.png"
+              alt="PS Logo"
+              className="h-10 sm:h-12 w-10 sm:w-12 object-contain"
+            />
+            <span className="text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-600 to-cyan-600 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">
               Poom Santhong
-            </span>{" "}
+            </span>
           </motion.div>
 
           {/* Desktop Navigation - hidden on mobile */}

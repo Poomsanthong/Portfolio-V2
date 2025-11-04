@@ -21,7 +21,7 @@ const Hero = () => {
     // Full screen hero section with gradient background
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-cyan-50 to-slate-50 dark:from-gray-900 dark:via-blue-950 dark:to-gray-900"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-linear-to-br from-blue-50 via-cyan-50 to-slate-50 dark:from-gray-900 dark:via-blue-950 dark:to-gray-900"
     >
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 overflow-hidden">
@@ -74,7 +74,7 @@ const Hero = () => {
                 stiffness: 100,
               }}
               whileHover={{ scale: 1.05 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-800 dark:from-cyan-400 dark:via-blue-400 dark:to-cyan-300 bg-clip-text text-transparent drop-shadow-lg cursor-default select-none relative py-4"
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 bg-linear-to-r from-blue-600 via-cyan-600 to-blue-800 dark:from-cyan-400 dark:via-blue-400 dark:to-cyan-300 bg-clip-text text-transparent drop-shadow-lg cursor-default select-none relative py-4"
               style={{
                 textShadow: "0 0 30px rgba(59, 130, 246, 0.3)",
               }}
@@ -97,7 +97,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }} // Appears after main heading
-              className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 pb-4 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-800 dark:from-cyan-400 dark:via-blue-400 dark:to-cyan-300 bg-clip-text text-transparent"
+              className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 pb-4 bg-linear-to-r from-blue-600 via-cyan-600 to-blue-800 dark:from-cyan-400 dark:via-blue-400 dark:to-cyan-300 bg-clip-text text-transparent"
             >
               Building Modern Web Experiences
             </motion.h2>
@@ -125,7 +125,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 onClick={scrollToProjects}
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                className="bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
               >
                 View My Work
               </Button>

@@ -38,29 +38,35 @@ const Motivation = () => {
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               I am writing to express my strong interest in the Front-End
               Developer position. With a solid foundation in modern web
-              technologies including React, JavaScript, HTML, CSS, and Tailwind
-              CSS, I am confident in my ability to contribute effectively to
-              your team.
+              technologies including React, JavaScript , HTML , CSS , and
+              Tailwind CSS, I am confident in my ability to contribute
+              effectively to your team.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               Throughout my journey as a developer, I have developed a passion
-              for creating intuitive, responsive, and visually appealing web
-              applications. My expertise extends to building mobile-first
-              designs, implementing complex UI components, and ensuring
-              cross-browser compatibility. I am particularly skilled in version
-              control with GitHub and deployment using Vercel, ensuring smooth
-              collaboration and efficient project delivery.
+              for creating intuitive, responsive , and visually appealing web
+              applications. My expertise includes building mobile-first designs,
+              implementing complex UI components , and ensuring cross-browser
+              compatibility. I am experienced with version control using GitHub
+              and deployment through Vercel, enabling smooth collaboration and
+              efficient delivery.
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+              Alongside my current skills, I am actively expanding my knowledge
+              by learning Next.js and gradually building backend fundamentals,
+              allowing me to better understand full-stack workflows and
+              contribute more efficiently in modern development environments.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               What sets me apart is my commitment to writing clean, maintainable
-              code and my dedication to staying current with industry trends. I
-              believe in the power of user-centered design and strive to create
-              experiences that not only look great but also solve real problems
-              for end users.
+              code and staying up-to-date with industry trends. I believe in
+              user-centered design and strive to build experiences that are not
+              only visually refined but also meaningful and impactful for end
+              users.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               I am excited about the opportunity to bring my technical skills,
-              creativity, and enthusiasm to your organization. I look forward to
+              creativity, and motivation to your organization. I look forward to
               contributing to innovative projects and growing alongside a
               talented team.
             </p>
