@@ -18,7 +18,7 @@ const App = () => {
       <div className="min-h-screen transition-colors duration-300">
         <NavBar />
         <Hero />
-        <Motivation />
+        {/* <Motivation /> */}
         <About />
         <Skills />
         <Education />

@@ -49,6 +49,10 @@ export const EDUCATION: EducationEntry[] = [
 
 export const CERTIFICATIONS: CertificationEntry[] = [
   { name: "Adobe Professional Certificate", issuer: "Ice Malta", date: "2025" },
-  { name: " Web Design Certification", issuer: "Ice Malta", date: "2025" },
+  {
+    name: " Front-End Developer Certification",
+    issuer: "Ice Malta",
+    date: "2025",
+  },
   { name: " Java Coding Participant", issuer: "Ice Malta", date: "2022" },
 ];

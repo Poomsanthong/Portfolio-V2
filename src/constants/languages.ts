@@ -16,8 +16,8 @@ export const LANGUAGES_PROFICIENCY: LanguageProficiency[] = [
   },
   {
     name: "Maltese",
-    level: "Intermediate",
-    proficiency: 65,
+    level: "Professional",
+    proficiency: 80,
     description: "Conversational proficiency",
   },
   {
