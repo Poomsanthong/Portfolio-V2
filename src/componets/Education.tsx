@@ -32,8 +32,7 @@ const Education = () => {
             development and computer science.
           </p>
         </motion.div>
-
-        {/* Education Cards */}
+        `` {/* Education Cards */}
         <div className="space-y-8 max-w-4xl mx-auto">
           {EDUCATION.map((edu, index) => (
             <motion.div
@@ -41,7 +40,7 @@ const Education = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-6 shadow-lg hover:shadow-xl transition"
+              className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-blue-950/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
             >
               {/* Header */}
               <div className="flex items-start gap-4 mb-3">
@@ -98,7 +97,6 @@ const Education = () => {
             </motion.div>
           ))}
         </div>
-
         {/* Certifications */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -117,7 +115,7 @@ const Education = () => {
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-6 shadow border border-blue-100 dark:border-gray-700"
+                className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-blue-950/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
               >
                 <div className="mb-3">
                   <Award className="w-8 h-8 text-blue-600 dark:text-cyan-400" />
