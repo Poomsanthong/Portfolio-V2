@@ -32,7 +32,7 @@ const Education = () => {
             development and computer science.
           </p>
         </motion.div>
-        `` {/* Education Cards */}
+         {/* Education Cards */}
         <div className="space-y-8 max-w-4xl mx-auto">
           {EDUCATION.map((edu, index) => (
             <motion.div
