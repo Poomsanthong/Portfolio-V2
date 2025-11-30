@@ -63,10 +63,49 @@ export const PROJECTS: ProjectCard[] = [
       "API",
       "Real-Time Data",
     ],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Poomsanthong/stocks_app",
+    live: "",
+    status: "In Progress",
+  },
+  {
+    title: "Apple Website landing page ",
+    description:
+      "A clone of the Apple website landing page, featuring responsive design, smooth animations, and interactive elements using React-Vite and Tailwind CSS.",
+    image: "/assets/Apple-website-logo.jpg",
+    tags: [
+      "React-Vite",
+      "Tailwind CSS",
+      "Responsive",
+      "GitHub",
+      "Animations",
+      "Interactive Elements",
+      "Three.js",
+      "Gsap",
+      "Light Studio",
+    ],
+    github: "https://github.com/Poomsanthong/Apple-website",
+    live: "https://apple-website-six-lovat.vercel.app/",
+  },
+  {
+    title: "Reservation System Web Application",
+    description:
+      "A web application for managing reservations at a restaurant, allowing users to book tables online and view available time slots. Built with Next.js and Tailwind CSS.",
+    image: "/assets/reservation.jpg",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Responsive",
+      "API",
+      "GitHub",
+      "Booking",
+      "Reservations",
+      "Database",
+      "Form Validation",
+      "User Authentication",
+      "CRUD Operations",
+    ],
+    github: "https://github.com/Poomsanthong/reservation-system",
+    live: "",
     status: "In Progress",
   },
 ];
-
-export const FEATURED_PROJECTS = PROJECTS; // All currently shown
