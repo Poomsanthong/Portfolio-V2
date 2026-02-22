@@ -48,25 +48,25 @@ export const PROJECTS: ProjectCard[] = [
     github: "https://github.com/Poomsanthong/Portfolio-V2",
     live: "https://portfoliov2-bpufaqn5l-poom-s-projects-177e0ca6.vercel.app/",
   },
-  {
-    title: "Real-Time Stock Market (In Progress)",
-    description:
-      "Real-Time Stock App Live prices, smart alerts, AI insights, charts, news, and custom watchlists powered by Next.js.",
-    image: "/assets/stock-market.jpg",
-    tags: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Responsive",
-      "GitHub",
-      "App routing",
-      "API",
-      "Real-Time Data",
-    ],
-    github: "https://github.com/Poomsanthong/stocks_app",
-    live: "",
-    status: "In Progress",
-  },
+  // {
+  //   title: "Real-Time Stock Market (In Progress)",
+  //   description:
+  //     "Real-Time Stock App Live prices, smart alerts, AI insights, charts, news, and custom watchlists powered by Next.js.",
+  //   image: "/assets/stock-market.jpg",
+  //   tags: [
+  //     "React",
+  //     "Next.js",
+  //     "Tailwind CSS",
+  //     "Responsive",
+  //     "GitHub",
+  //     "App routing",
+  //     "API",
+  //     "Real-Time Data",
+  //   ],
+  //   github: "https://github.com/Poomsanthong/stocks_app",
+  //   live: "",
+  //   status: "In Progress",
+  // },
   {
     title: "Apple Website landing page ",
     description:
@@ -105,7 +105,6 @@ export const PROJECTS: ProjectCard[] = [
       "CRUD Operations",
     ],
     github: "https://github.com/Poomsanthong/reservation-system",
-    live: "",
-    status: "In Progress",
+    live: "https://reservation-system-tau-mauve.vercel.app/",
   },
 ];
