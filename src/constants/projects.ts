@@ -105,6 +105,6 @@ export const PROJECTS: ProjectCard[] = [
       "CRUD Operations",
     ],
     github: "https://github.com/Poomsanthong/reservation-system",
-    live: "https://reservation-system-tau-mauve.vercel.app/",
+    live: "https://bookflow.poomsan.site/",
   },
 ];
